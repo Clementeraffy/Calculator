@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #830505;
+        }
+
+        .calculator {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #73b121;
+        }
+
+        .calculator__display {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 180px;
+            text-align: right;
+            background-color: #e9e3eb;
+            color: #333;
+        }
+
+        .calculator__keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .calculator__key {
+            padding: 10px;
+            border: 1px solid #991e1e;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            background-color: #387faf;
+            color: #333;
+        }
+
+        .calculator__key.operator {
+            background-color: #0d8a32;
+        }
+
+        .calculator__key--equal {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .calculator__key--equal:hover {
+            background-color: #45a049;
+        }
+
+        .calculator__key--clear {
+            background-color: #b31717;
+            color: #fff;
+        }
+
+        .calculator__key--clear:hover {
+            background-color: #9e0f0f;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator__display" id="display">
+            0
+        </div>
+        <div class="calculator__keys">
+            <div class="calculator__key operator">+</div>
+            <div class="calculator__key operator">-</div>
+            <div class="calculator__key operator">*</div>
+            <div class="calculator__key operator">/</div>
+            <div class="calculator__key">7</div>
+            <div class="calculator__key">8</div>
+            <div class="calculator__key">9</div>
+            <div class="calculator__key">4</div>
+            <div class="calculator__key">5</div>
+            <div class="calculator__key">6</div>
+            <div class="calculator__key">1</div>
+            <div class="calculator__key">2</div>
+            <div class="calculator__key">3</div>
+            <div class="calculator__key">0</div>
+            <div class="calculator__key">.</div>
+            <div class="calculator__key calculator__key--equal">=</div>
+            <div class="calculator__key calculator__key--clear">C</div>
+        </div>
+    </div>
+</body>
+</html>
